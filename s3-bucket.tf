@@ -2,7 +2,8 @@ module "s3_bucket" {
   source = "terraform-aws-modules/s3-bucket/aws"
   version = "2.8.0"
 
-  bucket = "GURAVASKED-s3-bucket"
+  # bucket = "my-s3-bucket"
+  bucket_prefix = "artk42"
   acl    = "private"
 
   versioning = {
